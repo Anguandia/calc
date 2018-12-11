@@ -7,3 +7,9 @@ install:
 # command to run tests
 script:
   - pytest
+after success:
+  - "sbt coveralls"
+notifications:
+  email:
+    recipients:
+      - mikeanguandia@yahoo.com
