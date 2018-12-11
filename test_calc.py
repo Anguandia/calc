@@ -16,3 +16,6 @@ class TestCalculator:
 
     def test_division(self):
         assert calc.divide(10, 2) == 5
+
+    def test_exp(self):
+        assert calc.exp(3, 4) == 81
