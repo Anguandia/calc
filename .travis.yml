@@ -10,7 +10,7 @@ install:
   - pip install coveralls
 
 script:
-  - python -m pytest --cov=test_cacl.py
+  - python -m test_calc --cov
   
 after_success:
   - coveralls
