@@ -8,7 +8,7 @@ install:
 script:
   - pytest test_calc.py
 after success:
-  - "sbt coveralls"
+  - coveralls
 notifications:
   email:
     recipients:
